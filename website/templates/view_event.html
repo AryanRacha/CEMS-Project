@@ -1,0 +1,29 @@
+<!-- templates/view_events.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Events | College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Available Events</h1>
+    </header>
+    <div class="container mt-5">
+        <ul class="list-group mt-3">
+            {% for event in events %}
+                <li class="list-group-item">
+                    <h5>{{ event['title'] }}</h5>
+                    <p>Category: {{ event['category'] }}</p>
+                    <p>Date: {{ event['date'] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary mt-4">Back to Dashboard</a>
+    </div>
+</body>
+</html>
+

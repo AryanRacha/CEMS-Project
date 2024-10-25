@@ -1,0 +1,25 @@
+<!-- templates/admin_dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+    </header>
+    <nav class="navbar">
+        <a href="{{ url_for('create_event') }}">Create Event</a>
+        <a href="{{ url_for('view_events') }}">View Events</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Welcome to the Admin Panel</h2>
+        <p>Manage events and oversee student participation.</p>
+    </div>
+</body>
+</html>
