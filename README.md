@@ -24,7 +24,7 @@ Tables:
 events: Stores event details (title, description, date, location).
 registrations: Stores user registration data (name, roll number, email).
 
--> Team Members 
+-> Team Members:
 
 Aryan Racha - 23102C0055
 Shreyas Gursale - 23102C0061
